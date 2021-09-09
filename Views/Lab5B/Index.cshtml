@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Lab5B";
+}
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+<div class="container">
+    <h1 class="display-4 mb-4">JQuery</h1>
+    <a class="btn btn-sm btn-success" id="hideThis">Hide</a>
+
+    <h4 class="display-4 mt-4" id="fadeId">Fade This Element</h4>
+    <a class="btn btn-sm btn-success" id="fadeout">Fade Out</a>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $("#hideThis").click(() => {
+            $("H1").hide();
+        });
+
+        $("#fadeout").click(() => {
+            $("#fadeId").fadeOut();
+        });
+
+    });
+</script>
